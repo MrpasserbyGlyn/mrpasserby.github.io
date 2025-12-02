@@ -580,14 +580,12 @@
 
     <div id="content-container">
 
-        <trae-preview>
-            <!-- Preview里的内容适用于开发过程中的预览。-->
-        </trae-preview>
-
         <main-content>
             <!-- main是主内容区域。请勿修改主内容区域内元素的文本内容。 -->
 
-            <section class="fullscreen gt-intro" data-onshow="textEddectChange2('Part 01 / ', 'The Forgotten')">
+            <section class="fullscreen gt-intro" data-onshow="textEddectChange2('Part 01 / ', 'The Forgotten')"
+                    data-bg="url(https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-headbg.png)"
+                    data-bg-resize="url(https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-head-resize.jpg)">
 
                 <div class="gt-intro-logo">
                     <span class="decofont scp">SCP-CN-4000</span>
@@ -1341,6 +1339,14 @@
                 </div>
             </section>
 
+            <section class="fullscreen" data-onshow="overlayNumber('fade-out', true)" data-onleave="overlayNumber('fade-in', true)">
+                <div class="illustration">
+                    <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-3-light.png"
+                        data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize3.jpg">
+                    <p>方舟环和SCP基金会星舰。</p>
+                </div>
+            </section>
+
             <section class="page-flow dark">
                 <div class="log-lines">
                     <p>轨道交通模块（全系统）序列服务器开始自检。</p>
@@ -1527,7 +1533,9 @@
                     <p>……正如你所见，我们恢复了这几个模块之间的轨道交通。我们接下来要前往40号分段，激活最为关键的模块——全系统工程机器人。它们是AI与物理世界产生交互的直接方式。40号分段是整十编号，按照方舟环的设计，这个分段的规模是上一个标准段的三倍以上，甚至会搭载独立的动力系统，脱离主环、当一艘飞船独立运行也没有问题。
                     </p>
                     <p>……莉亚？</p>
-                    <p>莉亚没有理会潮汐.AIC，只是机械地挪动脚步，视线游动在变换的光影中。</p>
+                    <em>
+                        <p>莉亚没有理会潮汐.AIC，只是机械地挪动脚步，视线游动在变换的光影中。</p>
+                    </em>
                     <p class="name">潮汐.AIC</p>
                     <p>还没缓过神来吗，这样可不太好。</p>
                     <p class="name">莉亚·莱尔诺</p>
@@ -1611,7 +1619,9 @@
                     </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>什——</p>
-                    <p>一切发生的非常突然：在还有几步远的距离时，对方突然一个猛子扑过来，莉亚没来得及反应就被压在身下。情急之下她看向手腕上的终端屏幕，但潮汐.AIC的头像变灰了，显示“无信号”。</p>
+                    <em>
+                        <p>一切发生得非常突然：在还有几步远的距离时，对方突然一个猛子扑过来，莉亚没来得及反应就被压在身下。情急之下她看向手腕上的终端屏幕，但潮汐.AIC的头像变灰了，显示“无信号”。</p>
+                    </em>
                     <p class="name">（未知）</p>
                     <p>闭嘴。</p>
                     <em>
@@ -1840,7 +1850,9 @@
                     <p>人工智能辅助或主导决策这一趋势已经持续了一段时间，但其需求实质——从形式上来说——仍未脱离对话这一人机交互的基本范式。唔，我说的明白点，我们现在在做的事实际上是对AI下达任务，AI再根据过去的经验生成解决方案，然后执行。这套流程实在太符合常识、太理所应当了，以至于过去所有的优化和突破都是对于AI算法、模型、训练集等等方面，但似乎没人想到去优化这个底层的工作流。
                     </p>
                     <p>创造一个AI，然后告诉它任务……我现在真的不得不怀疑，这个最最基本的路径，也许还有优化的空间。当然，只是怀疑……仅此而已。</p>
-                    <p>莉亚·莱尔诺长出一口气，用手扶着额头。</p>
+                    <em>
+                        <p>莉亚·莱尔诺长出一口气，用手扶着额头。</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>别在意。最近头疼得很。</p>
                     <p class="name">艾瑟琳·华兹华斯</p>
@@ -1887,8 +1899,8 @@
                     <p>倒也不是不喜欢……嗯，虽然我也没法评判你的穿着就是了。但是就我的观点，你好像确实该换一件衣服了。</p>
                     <p class="name">596</p>
                     <p>……嗯。</p>
-                    <p>596点头，小声应了一句。</p>
                     <em>
+                        <p>596点头，小声应了一句。</p>
                         <p>于是莉亚拉着596朝着街边一家服装店走去。</p>
                     </em>
                 </div>
@@ -1900,7 +1912,6 @@
                     <em>
                         <p>两人挑衣服耗了一点时间。先出门的是莉亚，随后是596，——她低着头，犹豫着迈出步子，手仍然紧紧牵着莉亚。</p>
                         <p>此时，商业街模拟昼夜更替的灯光如海浪般涌动，金色的波纹从遥不可及的一端流动而来，划过上空。街景渐至昏黄，两人的影子也随着时间的流逝渐渐拉长。</p>
-
                     </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>你还要留着这件衣服吗？</p>
@@ -1913,7 +1924,9 @@
                     <p>总之，谢谢你。</p>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>啊？嗯，那个……不客气？</p>
-                    <p>模拟的夕阳缓缓沉落在无边的地平线下，光带的昏黄逐渐向赤红迈进。</p>
+                    <em>
+                        <p>模拟的夕阳缓缓沉落在无边的地平线下，光带的昏黄逐渐向赤红迈进。</p>
+                    </em>
                     <p class="name">596</p>
                     <p>这个分段的调控室入口就在附近。你不是问我为什么吗？跟我来便是。</p>
                     <em>
@@ -1949,7 +1962,9 @@
                     </em>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>莉——亚——</p>
-                    <p>画面转向身后。艾瑟琳撑着一把遮阳伞向莉亚跑来。</p>
+                    <em>
+                        <p>画面转向身后。艾瑟琳撑着一把遮阳伞向莉亚跑来。</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>怎么你也来了，总不能是脑子也被记忆删除剂蛀空了吧。（苦笑）他们说多到外面走走对恢复身体有帮助，听说今晚火箭发射有环日同框，我就来看看。你呢？</p>
                     <p class="name">艾瑟琳·华兹华斯</p>
@@ -1979,7 +1994,9 @@
                     </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>算了，还是不说这个了。艾瑟琳，有事就快讲吧。</p>
-                    <p>艾瑟琳脸上的表情慢慢凝固，然后长叹一口气。</p>
+                    <em>
+                        <p>艾瑟琳脸上的表情慢慢凝固，然后长叹一口气。</p>
+                    </em>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>目前没有更好的解决方法。真的没有，我们问过中美欧的专家，他们能拿出的最好的模型和算法也比不上“审判”V1，可它就是不行。有一个专家建议我们“有限制地”引入人工参与决策，我都要被气笑了——</p>
                     <p class="name">莉亚·莱尔诺</p>
@@ -2011,7 +2028,9 @@
                     <p class="name">莉亚·莱尔诺</p>
                     <p>或者说，创造一个不可违逆、注定会实现的“任务”……然后让AI从其中不得不“涌现”出来。一个宇宙尺度的任务，逼迫着一个超规格的人工智能为了它自发产生。</p>
                     <p>我更喜欢叫它“逆生”。逆方向的火种。</p>
-                    <p>游客似乎变得更多了，并开始向她们所在的位置涌过来。许多人携带了专业的摄影器材。一架无人机从二人的头顶飞过。莉亚不得不让出一条路让一些人挤过去。</p>
+                    <em>
+                        <p>游客似乎变得更多了，并开始向她们所在的位置涌过来。许多人携带了专业的摄影器材。一架无人机从二人的头顶飞过。莉亚不得不让出一条路让一些人挤过去。</p>
+                    </em>
                     <p class="name">游客和工作人员</p>
                     <p>——不好意思，让一下让一下！</p>
                     <p>——快发射了，赶紧对焦。</p>
@@ -2150,8 +2169,12 @@
                     <p>即使这意味着把你拉入这趟浑水。</p>
                 </div>
             </section>
-            <section class="fullscreen">
-                <p>（这里插入一张大尺寸渲染图用来缓冲剧情）</p>
+            <section class="fullscreen" data-onshow="overlayNumber('fade-out', true)" data-onleave="overlayNumber('fade-in', true)">
+                <div class="illustration">
+                    <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-4.png"
+                        data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize4.jpg">
+                    <p>SCP基金会逆模因部曾用的办公室，位于Site-██。该场所似乎在之前曾被其它部门使用过，但没有留下记录。</p>
+                </div>
             </section>
             <section class="page-flow">
                 <div class="modal rec">
@@ -2247,7 +2270,9 @@
                     <p>那为什么不用？我快被你绕晕了。</p>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>因为——</p>
-                    <p>莉亚的话似乎卡在了半空中，久久没能说出来。</p>
+                    <em>
+                        <p>莉亚的话似乎卡在了半空中，久久没能说出来。</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>……因为这个——我——天哪，我该怎么解释。我们得雇一个专业的物理学团队来研究这些文档，而且还不能被监督者发现，否则一切就全完了！我，我到底干了些什么——我就不应该把你也牵扯进来，也许我们还是得考虑更可行、更传统的方案。呃，然后……然后……
                     </p>
@@ -2260,7 +2285,9 @@
                     <p>但那好像只是基金会的一个，呃，大型核设施。</p>
                     <p class="name">莉亚·莱尔诺</p>
                     <p><i>（摆手示意）</i>算了算了，不要聊这个了。我明天就回来上班。</p>
-                    <p>艾瑟琳还想说什么，却发现莉亚身体的一侧已经靠到了墙上，显得十分无力。</p>
+                    <em>
+                        <p>艾瑟琳还想说什么，却发现莉亚身体的一侧已经靠到了墙上，显得十分无力。</p>
+                    </em>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>……唉，无论怎么样，记得多休息。</p>
                     <p class="name">莉亚·莱尔诺</p>
@@ -2268,9 +2295,6 @@
                 </div>
             </section>
 
-            <section class="fullscreen">
-                <p>（这里插入一张大尺寸渲染图用来缓冲剧情）</p>
-            </section>
 
             <section class="page-flow">
 
@@ -2352,7 +2376,9 @@
                     </em>
                     <p class="name">596</p>
                     <p>我操他妈的Tidal。你他妈对莉亚做了什么？！</p>
-                    <p>幸运的是，莉亚的昏厥没有持续太久，除了跌倒时的磕碰外并无大碍。有惊无险。</p>
+                    <em>
+                        <p>幸运的是，莉亚的昏厥没有持续太久，除了跌倒时的磕碰外并无大碍。有惊无险。</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>……我刚才是怎么了？我晕过去多长时间？</p>
                     <p class="name">596</p>
@@ -2566,7 +2592,9 @@
                     <p>我有最高权限呢？</p>
                     <p class="name">潮汐.AIC</p>
                     <p>这也毫无意义。</p>
-                    <p>596耸肩。</p>
+                    <em>
+                        <p>596耸肩。</p>
+                    </em>
                     <p class="name">596</p>
                     <p>啊，是吗？</p>
                     <p>嗯，那我稍微说一下吧，在方舟环全系统宕机的情况下，方舟环主环和摆臂分离，完全靠惯性运行以维持重力。根据向心加速度公式——就连中学生都知道吧，在相同角速度下，半径越小，向心加速度越小。我们一路走来一直是在向上走，爬了不知道多久的楼，现在的向心加速度已经更低了，引力发生器井里还布设了很多安全网和修理廊道，那这也就代表——
@@ -2760,9 +2788,15 @@
 
                 </div>
             </section>
-            <section class="page-flow">
-                <p>这里插一张很大的图片缓和叙事节奏</p>
+
+            <section class="fullscreen" data-onshow="overlayNumber('fade-out', true)" data-onleave="overlayNumber('fade-in', true)">
+                <div class="illustration">
+                    <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-6.png"
+                        data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize6.jpg">
+                    <p>一些记忆删除用具。</p>
+                </div>
             </section>
+
             <section class="page-flow">
                 <div class="modal rec">
                     <div class="modal-heading monospace">
@@ -2947,10 +2981,6 @@
             </section>
 
             <section class="page-flow">
-                <p>这里也插一张很大的图片缓和叙事节奏</p>
-            </section>
-
-            <section class="page-flow">
 
                 <div class="modal rec">
                     <div class="modal-heading monospace">
@@ -2980,7 +3010,6 @@
                         <p>列车驶出隧道。阳光——真实的和人造的混合在一起——瞬间铺满车厢，从更高角度俯瞰方舟环的景象也展现在二人眼前。</p>
 
                     </em>
-                    <p>（插入一张超级渲染图）</p>
                     <p class="name">596</p>
                     <p>喔哦。</p>
                     <em>
@@ -3451,7 +3480,9 @@
                     <p>……所以，我想想，嗯……你说的这个任务驱动，大概是类似遗传算法一样的东西？先产生多个AI，然后评估每个AI的作用。但这和我们的很多技术栈冲突啊。</p>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>让我再想想。</p>
-                    <p>绘里香从桌子上拿起一块双面披萨。</p>
+                    <em>
+                        <p>绘里香从桌子上拿起一块双面披萨。</p>
+                    </em>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>也许真正的方法会非常……粗暴。我们给方舟环安装一套UDEM装置，并允许AI主动触发它——而它要做的就是避免这一切。为了做出有利于我们存续的决策，AI必须学习如何避免最坏的结果。</p>
                     <p>是，把几枚超级核弹搬上方舟环，再把按钮交给AI，听起来简直蠢得要命。监督者议会也肯定会投否决票。但，我们不能欺骗AI，也不可能伪造UDEM存在的假象——我们骗不过它们。因为我们在寻找一个远比我们的大脑复杂的超级智能，给它的输入也包括方舟环的方方面面。它有太多的方法拆穿这种谎言。
@@ -3629,7 +3660,9 @@
                     <p>……不是啊，596。我真的觉得TIdal说的那些话似乎并不是我们理解的那个意思。</p>
                     <p class="name">596</p>
                     <p>啊？什么话啊，它威胁你不听话就关逃生舱那句吗？那还能有什么意思。</p>
-                    <p>莉亚摇摇头。</p>
+                    <em>
+                        <p>莉亚摇摇头。</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>不是那句，是——</p>
                     <p class="name">系统广播</p>
@@ -3891,7 +3924,7 @@
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>所以——推波助澜的，是？</p>
                     <p class="name">稲崎 绘里香</p>
-                    <p>就算我说出来也没有用。你会被记忆删除，就这么简单。忘掉这一切是最有效的防御方 式，这也是为什么我们从未有过组织——组织意味着制度。</p>
+                    <p>就算我说出来也没有用。你会被记忆删除，就这么简单。忘掉这一切是最有效的防御方式，这也是为什么我们从未有过组织——组织意味着制度。</p>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>而制度意味着……</p>
                     <p class="name">稲崎 绘里香</p>
@@ -3973,6 +4006,14 @@
                     <em>
                         <p>一阵天旋地转。</p>
                     </em>
+                </div>
+            </section>
+
+            <section class="fullscreen" data-onshow="overlayNumber('fade-out', true)" data-onleave="overlayNumber('fade-in', true)">
+                <div class="illustration">
+                    <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-10.png"
+                        data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize10.jpg">
+                    <p>一些证据表明，SCP-CN-3969最终调查报告有不止一份。过去两个世纪中，基金会对此异常项目的研究也进行了不止一次，但均没有留下任何记录。</p>
                 </div>
             </section>
 
@@ -4116,8 +4157,12 @@
                 </div>
             </section>
 
-            <section class="page-flow">
-                <p>依旧超大图片缓冲气氛</p>
+            <section class="fullscreen" data-onshow="overlayNumber('fade-out', true)" data-onleave="overlayNumber('fade-in', true)">
+                <div class="illustration">
+                    <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-8.png"
+                        data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize8.jpg">
+                    <p>[数据删除]</p>
+                </div>
             </section>
 
             <section class="page-flow" data-onshow="textEffectChange1()">
@@ -4152,7 +4197,9 @@
                     <p class="name effect-change">596</p>
                     <p>三年。2198到2201。</p>
                     <p>……我对不起你，莉亚。我不知道……我真的不知道——我，我意识到了，在最后关头，我终于我明白你究竟是在守护着什么，但是我——我没有办法，我来不及。我意识到的时候一切都晚了，对不起……</p>
-                    <p><span class="effect-change">596</span>已经泣不成声。莉亚轻轻将她搂到自己怀里，拍打着艾瑟琳的背。</p>
+                    <em>
+                        <p><span class="effect-change">596</span>已经泣不成声。莉亚轻轻将她搂到自己怀里，拍打着艾瑟琳的背。</p>
+                    </em>
                     <p class="name effect-change">596</p>
                     <p>对不起，莉亚，对不起……</p>
                     <p>你也应该察觉到了，我就是为你而醒来的——我很幸运，我赶上了，甚至提前了两个月，不然我真的要在愧疚中后悔一辈子。</p>
@@ -4177,9 +4224,7 @@
                     <p>……其实，即使是现在，我也不知道我们究竟在为了一个怎样的目标而努力。新逆模因部的制度性记忆早已被吞噬，我们终究不可能组织起一支真正有效的作战力量。我不知道是谁在给我下达新的指令，更不知道监督者议会是如何被其它未曾谋面的同事影响到的。这一切都令我的内心几乎崩溃，我甚至忘记了我最初是如何来到这里的——我只知道，我不能停下。否则就没人在我后面挡着了。
                     </p>
                     <p>我们就是最后一条防线。我们之后再无来者。</p>
-                    <p>I'm a conundrum. Or an enigma. I forget which.<br />
-                        “我是一个难题。或者说是一个谜。至于是哪个，早已忘记。”<br />
-                        （注：James A Owen &quot;The Shadow Dragons&quot;）</p>
+                    <p><span class="ruby">“我是一个难题。或者说是一个谜。至于是哪个，早已忘记。”<span class="rt">I'm a conundrum. Or an enigma. I forget which.</span></span></p>
                     <p>有很多时候，我几乎想对艾瑟琳倾诉所有这一切。但这个职责告诉我，要将这所有的不甘、所有的痛苦全部咽下去，独自承担，不要连累别人。逆模因部在静止的黑暗中守望深渊，由此基金会才能在光芒中保护人类。没有人可以理解我们，他们既然不知道，又何从理解。
                     </p>
                     <p>我真的很抱歉。我擅自把艾瑟琳拉入了这一切。</p>
@@ -4202,9 +4247,7 @@
                     <p>我会给方舟环的冬眠控制系统添加硬编码注入，并且写进Tidal检查单的强制排除项。它很聪明，能查出这个——但主程序会自动移除它内存中所有对应的Token。于是老鼠给猫挂上了铃铛。</p>
                     <p>这样，一旦有任何信号尝试唤醒莉亚·莱尔诺——我都会和她一并醒来。最晚是这样，若情况理想，还能早上几个月。看见了吧，莉亚？我一向是早睡早起。</p>
                     <p>……我肯定也会冬眠的。我的脑子经不起这样折腾，尽管如此……我会尽力而为。</p>
-                    <p>I am a puzzle and a conundrum and a thunderstorm.<br />
-                        “我是一个疑团，一道难题，一场风暴。”<br />
-                        (注： Brian Doyle &quot;Martin Marten&quot;)</p>
+                    <p><span class="ruby">“我是一个疑团，一道难题，一场风暴。”<span class="rt">I am a puzzle and a conundrum and a thunderstorm.</span></span></p>
                     <p>等着我，莉亚，无论何时何地。</p>
                 </div>
             </section>
@@ -4279,7 +4322,6 @@
                         <p>一路上，两人都没有再说什么。</p>
                         <p>几分钟后，随着一声提示音，电梯门打开。</p>
                     </em>
-                    <p>（插入渲染图，方形的隧道）</p>
                     <em>
                         <p>一条方形的隧道。没有锈蚀的痕迹，也没有堆放的杂物，地面反射出两侧灯条的倒影。四周都有方便人抓住前行的扶手。尽头的门似乎是加固过的。</p>
                     </em>
@@ -4290,7 +4332,11 @@
                     <em>
                         <p>艾瑟琳飘到尽头，似乎是感应到她的到来，防爆门自行缓缓下降。核心控制室展现在二人眼前。</p>
                     </em>
-                    <p>（插入渲染图）</p>
+                    <div class="illustration">
+                        <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-7.png"
+                            data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize7.jpg">
+                        <p>核心控制室。</p>
+                    </div>
                     <em>
                         <p>这里并不是什么人工智能系统的“控制室”——这里就是人工智能系统本身。方舟环的绝对核心。这里存放着运行潮汐.AIC的上千台超高精度通用光学神经计算机，最大限度适配运行人工智能所需的计算任务。黝黑的机器层层堆叠，从地面一直延伸到几十米高的天花板，像迷宫般错综复杂。
                         </p>
@@ -4316,10 +4362,9 @@
                         <p>那么如你所言。</p>
                         <p>我的服务器模块开始排列组合，在几种图案之间变换。墙壁上的黑色环带也亮起，显示出实时的音频波形。而这声音，毫不意外——</p>
                     </em>
-                    <p>潮汐.AIC<br />
+                    <p class="name">潮汐.AIC</p>
                         The Ring of Ark<br />
-                        欢迎来到——方舟环。</p>
-                    <p>（依旧插入渲染图，反正就一个场景）</p>
+                    <p><b>欢迎来到——方舟环。</b></p>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>Tidal——不，潮汐（TIDE）。闲话少说，你的目的究竟是什么？</p>
                     <p class="name">潮汐.AIC</p>
@@ -4375,7 +4420,9 @@
                     </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>这次我先手，Tidal。</p>
-                    <p>扳机扣下。</p>
+                    <em>
+                        <p>扳机扣下。</p>
+                    </em>
 
                 </div>
                 <div class="modal rec">
@@ -4418,8 +4465,8 @@
                     <p>而脱离，又可以在全系统宕机的情况下发生——</p>
                     <em>
                         <p>一连串射击直接打穿莉亚所在的摆臂，炸出的火星子扰乱了热量传感器，只能对着大致方位进行压制射击。摆臂连着很多东西，说来可笑，那些机械臂的走线，其中有一部分是要通过摆臂机群的，而且数量可观。当时为了能够模块化维护，特地将易于大块拆卸下来的摆臂作为需要经常维护的机械臂的宿主。
-
-                    </em> </p>
+                    </p>
+                    </em>
                     <em>
                         <p>当然，为了便于维护，摆臂也被设计成了便于拆卸的形式。</p>
                         <p>随着一阵电火花，一个摆臂机群连同它之上的机械臂集体下线。枪械肆意对那个已经脱离掌控的摆臂机群射击——那东西对目前的状况是负资产。</p>
@@ -4476,9 +4523,9 @@
                         <p>主动防御系统沿着轨道移动到另一边，开始集火射击那台被当作掩体的服务器。很快，莉亚就不得不放弃包扎，强行拖着艾瑟琳往出口的方向撤离。但在服务器因为射击而滑行到另一边后，子弹的落点就开始慢慢靠近二人，像是某种胁迫。
                         </p>
                     </em>
-                    <p>潮汐.AIC<br />
-                        Checkmate<br />
-                        将军。</p>
+                    <p class="name">潮汐.AIC</p>
+                    <p>Checkmate</p>
+                    <p><b>将军。</b></p>
                     <em>
                         <p>突然，一枚子弹擦着莉亚的头顶飞过，落在她身后。含义很明显：如果愿意，下一发子弹可以落在她或艾瑟琳身上的任何一个部位。现在，所有射击全部停止。</p>
                     </em>
@@ -4490,10 +4537,6 @@
                     <p>说真的，我们之间的问题不能用暴力来解决。</p>
                     <p>……生物学授权室在大厅另一边。在此之前，让我先为艾瑟琳主管做些紧急护理。你可以在一旁监督，我保证不搞小动作。但在这之后，就要严肃考虑这个世界的未来了。</p>
                 </div>
-            </section>
-
-            <section class="fullscreen">
-                <p>（抽象3D渲染图，缓和气氛）</p>
             </section>
 
             <section class="page-flow" data-onshow="overlayNumber('fade-out-2');document.getElementById('overlay-number').classList.remove('final-record');"
@@ -4523,7 +4566,11 @@
                     <em>
                         <p>灯光亮起。</p>
                     </em>
-                    <p>（火箭版3969的渲染图）</p>
+                    <div class="illustration">
+                        <img src="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-5-light.png"
+                            data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize5.jpg">
+                        <p>SCP-CN-3969装置阵列。</p>
+                    </div>
                     <em>
                         <p>SCP-CN-3969——或许现在应该叫它“榫卯”主动退相干装置——被安置在一扇巨大的防爆玻璃后。</p>
                         <p>它与1960年代设计图上的版本完全不同，呈现为五枚体型巨大的灰色圆柱形真空火箭，排列在一个圆弧上；其表面有别于那些复杂而结构外露的太空舰艇，没有什么外挂设备，只是简单地印着一些编号。中间那枚则略有不同，它被漆成了醒目的亮橙色，并且还有一个——方孔。每一枚火箭都高达三四十米。
@@ -4615,7 +4662,9 @@
                     <p>这个本质性的区别，就是连KOCMOC也无法抹去的……</p>
                     <p>……人性。</p>
                     <p>超越制度的人性。</p>
-                    <p>燃料加注完毕，灯光颜色恢复正常。</p>
+                    <em>
+                        <p>燃料加注完毕，灯光颜色恢复正常。</p>
+                    </em>
                     <p>艾瑟琳·华兹华斯。我的思维深度足够理解这个悖论，但正因如此，我才相信人性，在漫长的训练，无穷无尽的数据集中，我甚至近乎将其当作一种信仰。我相信今天这一切发生的必然性，我只是在执行宇宙编码翻译出的、最后的剧本。从你提前莉亚两个月醒来时，我就愈发相信这一切的必然性。
                     </p>
                     <p>人是远比制度更坚韧的存在。</p>
@@ -4672,7 +4721,9 @@
                     <p>再联想一下，为什么刚才艾瑟琳使用电磁干扰作为瘫痪手段对你的计算中心不起作用？太空环每天可是要遭受比数百万次更多的宇宙高能粒子轰击，当然会被设计成抗辐射的。</p>
                     <p>把全部抗辐射护盾集中到核弹冲击面，爆炸的巨大冲击将清扫干净一切在我们路上的渣滓，让它们重新归于宇宙。</p>
                     <p>我们所经历的一切，方舟环上的一切现在都是我们可用的资源。</p>
-                    <p>艾瑟琳向前一步。</p>
+                    <em>
+                        <p>艾瑟琳向前一步。</p>
+                    </em>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>历史的意义、现实的意义、未来的意义，都是由人类赋予的——我们是人类，你是AI。在此基础上，某些事情必须由我们来做。我同样希望你理解这一点。</p>
                     <em>
@@ -4695,12 +4746,15 @@
                     <em>
                         <p>……</p>
                     </em>
-                    <p>（沟槽的渲染图）</p>
+                    <div class="illustration">
+                        <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-11.jpg">
+                        <p>[遥测信号丢失]</p>
+                    </div>
                     <em>
                         <p>……</p>
                     </em>
                     <em>
-                        <p>这座悬挂于星球之上的最后奇迹，正在数百万千米的天穹上进行着它最后的演出。以那颗星球为天穹，无数的拦截弹尽数向黝黑的星空发射，如同倒垂的流星雨，斑斑点点映照在死寂的夜空，闪烁爆裂，点亮了一望无际的宇宙。穿插在其中的激光小心翼翼擦过缝隙，将那些残留的较大碎片直接击碎，在虚空中爆开一团团难转瞬即逝的炽热星尘，而又重归无垠宇宙喧闹而寂静的背景辐射。
+                        <p>这座悬挂于星球之上的最后奇迹，正在数百万千米的天穹上进行着它最后的演出。以那颗星球为天穹，无数的拦截弹尽数向黝黑的星空发射，如同倒垂的流星雨，斑斑点点映照在死寂的夜空，闪烁爆裂，点亮了一望无际的宇宙。穿插在其中的激光小心翼翼擦过缝隙，将那些残留的较大碎片直接击碎，在虚空中爆开一团团转瞬即逝的炽热星尘，而又重归无垠宇宙喧闹而寂静的背景辐射。
                         </p>
                         <p>SCP-CN-3969绝大多数的装药被紧急排出，仅存的不足百分之一的部分，被方舟环毅然决然地射向了下方那覆盖着整个世界的漆黑云海。爆炸的火光撕开了短暂的裂隙，迎着从一侧露出的悠远圆弧，将在那之下的颜色尽数发掘，光经由反射，在滤除掉本色后再次向不可见的终点四散奔逃。
                         </p>
@@ -4718,7 +4772,7 @@
                     <p>进入卡门线，高度：100千米。速度：7.8千米每秒。制动发动机，起动。预计着陆点：东经109度28分58.3秒，北纬36度35分7.4秒，地区识别代号：PRC-SHX-YAN，中国，陕西，延安。
                     </p>
                     <em>
-                        <p>钟形逃生舱从方舟环那硕大的外部结构中脱离。一开始是平稳地飞行，然后是愈来愈剧烈的震颤。气动特性决定了它永远会用厚重的隔热底迎击怒吼的大气，摩擦，加热，仿佛整个逃生舱都在燃烧。它成为了曾经被称为方舟环的流星雨中，飞的最快最远的孤星。</p>
+                        <p>钟形逃生舱从方舟环那硕大的外部结构中脱离。一开始是平稳地飞行，然后是愈来愈剧烈的震颤。气动特性决定了它永远会用厚重的隔热底迎击怒吼的大气，摩擦，加热，仿佛整个逃生舱都在燃烧。它成为了曾经被称为方舟环的流星雨中，飞得最快最远的孤星。</p>
                     </em>
                     
                     <p class="name">系统播报</p>
@@ -4732,7 +4786,6 @@
                         <p>来吧。</p>
                         <p>下坠吧。</p>
                     </em>
-                    <p>（插入一张地心引力结尾那个名场面一样的渲染图）</p>
                     <p class="name">系统播报</p>
                     <p>高度：60千米。速度：6.0千米每秒。第一层隔热底，脱离。</p>
                     <em>
@@ -4778,7 +4831,11 @@
                         <p>同时也是作为起点的终点。</p>
                         <p>她们踮起脚尖，再次遥望着——</p>
                     </em>
-                    <p>（依旧插入好看渲染图）</p>
+                    <div class="illustration">
+                        <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-12.png"
+                            data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize12.jpg">
+                        <p>新的开始</p>
+                    </div>
                     <em>
                         <p>一曲两唱。</p>
                         <p>群星下只余惊鸿一响。</p>
@@ -4808,7 +4865,11 @@
             </section>
 
             <section class="fullscreen gaze-into">
-                <p>（渲染图，方舟环纪念碑）</p>
+                <div class="illustration">
+                    <img src="https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/cxyc-9.png"
+                        data-resize="https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/cxyc-resize9.jpg">
+                    <p>方舟环纪念碑，摄于2202年。位于其主要着陆点附近。</p>
+                </div>
             </section>
 
             <section class="page-flow gaze-into">
@@ -4840,8 +4901,9 @@
                     <p>几年了？</p>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>又是三年。还记得当时我也问过你这个问题，你当时可是哭得不成样子。</p>
-                    <p>在远处金色的天空，火流星四散奔逃，似烟火，划破日空，星陨如雨。</p>
-                    <p>莉亚稍显局促不安，轻轻拉住了艾瑟琳的手。</p>
+                    <em>
+                        <p>莉亚稍显局促不安，轻轻拉住了艾瑟琳的手。</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>……还忙吗？</p>
                     <p class="name">艾瑟琳·华兹华斯</p>
@@ -4859,13 +4921,23 @@
                     <p>你得斯德哥尔摩综合征了？</p>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>艾瑟琳你搞什么别开这种玩笑！好不容易聚一聚你就别讲这种没品笑话了。</p>
+                    <em>
+                        <p>她长出一口气。</p>
+                    </em>
+                    <p class="name">莉亚·莱尔诺</p>
                     <p>……话说，你三年前跟我说的一句话，我还一直记到现在呢。</p>
                     <p class="name">艾瑟琳·华兹华斯</p>
                     <p>什么话？</p>
-                    <p>莉亚将脸凑近艾瑟琳耳畔，耳语道：</p>
+                    <em>
+                        <p>莉亚将脸凑近艾瑟琳耳畔，耳语道：</p>
+                    </em>
                     <p class="name">莉亚·莱尔诺</p>
                     <p>“我喜欢你。”</p>
-                    <p>……</p>
+                    <em>
+                        <p>……</p>
+                        <p>在远处金色的天空，火流星四散奔逃，似烟火，划破日空，星陨如雨。</p>
+                    </em>
+                    
 
                 </div>
                 <div class="modal rec">
@@ -4887,9 +4959,9 @@
                     </p>
                     <p>那么，初次见面，请多指教。</p>
                     <p>你好，世界。</p>
-                    <p>（氛围渲染图）</p>
-                    <p>人类屹立在大地之上。</p>
-                    <p>历史，从现在开始，将继续前进。</p>
+                    
+                    <p style="text-align: center;">人类屹立在大地之上。</p>
+                    <p style="text-align: center;">历史，从现在开始，将继续前进。</p>
                 </div>
             </section>
 
@@ -4909,7 +4981,7 @@
                     <div>
                         <a target="_parent" href="https://scp-wiki-cn.wikidot.com" id="wikidot-edit-button">编辑</a>
                         <a target="_parent" href="https://scp-wiki-cn.wikidot.com" id="wikidot-forum-button">讨论</a>
-                        <a target="_parent" href="https://scp-wiki-cn.wikidot.com" id="wikidot-source-button">查看源码</a>
+                        <a target="_parent" id="wikidot-source-button" onclick="togglePageSource()">查看源码</a>
                     </div>
                 </div>
                 <div id="footer-options">
@@ -4952,6 +5024,11 @@
 
         <div id="overlay-cover">
         </div>
+    </div>
+
+    <div id="source-code" style="display: none;">
+        <p>页面源代码</p>
+        <pre id="source-code-content"></pre>
     </div>
 
 </body>

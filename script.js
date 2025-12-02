@@ -9,6 +9,19 @@ let uiCurrentScrollPercent = 0;
 let heightZeroPosition = null;
 let heightZeroElement = null;
 
+// 防抖函数
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
 /*
     * UI
     */
@@ -101,6 +114,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if (pagename) {
         document.getElementById("wikidot-edit-button").setAttribute("href", `https://scp-wiki-cn.wikidot.com/${pagename}/edit/true/norender/true`);
     }
+    let pageforum = urlParams.get("forumid");
+    if (pageforum) {
+        document.getElementById("wikidot-forum-button").setAttribute("href", `https://scp-wiki-cn.wikidot.com/forum/${pageforum}`);
+    }
 
     // 初始化顶部导航栏的动画延迟
     let navLists = document.querySelectorAll("div#mobile-navbar-list>ul>li>ul");
@@ -131,6 +148,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 初始化height-zero元素的位置信息
     updateHeightZeroPosition();
+    
+    // 初始化图片优先加载系统
+    initImageLoading();
     
     // 监听窗口大小变化，更新height-zero元素的位置
     window.addEventListener('resize', debounce(function() {
@@ -644,6 +664,77 @@ function textEddectChange2(text1, text2) {
 
 
 /*
+    * 图片优先加载系统
+    * 先加载低分辨率图片，再加载高分辨率图片
+    */
+
+// 处理section背景图片的优先加载
+function loadSectionBackgrounds() {
+    // 获取所有带有data-bg属性的section元素
+    const sections = document.querySelectorAll('section[data-bg]');
+    
+    sections.forEach(section => {
+        const lowResBg = section.getAttribute('data-bg-resize');
+        const highResBg = section.getAttribute('data-bg');
+        
+        // 如果有低分辨率图片，先加载它
+        if (lowResBg) {
+            section.style.backgroundImage = lowResBg;
+            
+            // 如果有高分辨率图片，预加载它
+            if (highResBg) {
+                const img = new Image();
+                img.onload = function() {
+                    // 高分辨率图片加载完成后，替换背景
+                    section.style.backgroundImage = highResBg;
+                };
+                // 从URL中提取图片地址
+                const highResUrl = highResBg.match(/url\(['"]?([^'"\)]+)['"]?\)/)[1];
+                img.src = highResUrl;
+            }
+        } else if (highResBg) {
+            // 如果没有低分辨率图片，直接使用高分辨率图片
+            section.style.backgroundImage = highResBg;
+        }
+    });
+}
+
+// 处理img标签的优先加载
+function loadImageSources() {
+    // 获取所有带有data-resize属性的img元素
+    const images = document.querySelectorAll('img[data-resize]');
+    
+    images.forEach(img => {
+        const lowResSrc = img.getAttribute('data-resize');
+        const originalSrc = img.getAttribute('src');
+        
+        // 如果有低分辨率图片，先加载它
+        if (lowResSrc) {
+            // 保存原始src
+            img.setAttribute('data-original-src', originalSrc);
+            // 设置低分辨率图片
+            img.setAttribute('src', lowResSrc);
+            
+            // 如果有原始图片，预加载它
+            if (originalSrc) {
+                const preloadImg = new Image();
+                preloadImg.onload = function() {
+                    // 原始图片加载完成后，替换src
+                    img.setAttribute('src', originalSrc);
+                };
+                preloadImg.src = originalSrc;
+            }
+        }
+    });
+}
+
+// 初始化图片优先加载系统
+function initImageLoading() {
+    loadSectionBackgrounds();
+    loadImageSources();
+}
+
+/*
     * 其它功能
     */
 
@@ -653,3 +744,14 @@ function generateModalID(modalElement) {
     modalIDElement.textContent += crypto.randomUUID();
 }
 
+// 显示页面自己的源代码
+function togglePageSource() {
+    const sourceCodeDiv = document.getElementById("source-code");
+    sourceCodeDiv.style.display = sourceCodeDiv.style.display === "none" ? "block" : "none";
+    if(sourceCodeDiv.style.display === "block") {
+        const pageSource = document.documentElement.outerHTML;
+        document.getElementById("source-code-content").textContent = pageSource;
+    }
+    const buttonElement = document.getElementById("wikidot-source-button");
+    buttonElement.textContent = sourceCodeDiv.style.display === "none" ? "查看源码" : "隐藏源码";
+}
